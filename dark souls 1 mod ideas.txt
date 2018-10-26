@@ -1,0 +1,365 @@
+mod name: Prepare to GIT GUD edition
+
+general changes:
+-highly reduced damage (about 200-250 for 2 uses at 30-50 stat investment) for buffs, requirements and slightly more charges (2 charges for faith buffs) and longer duration
+-improved base dmg for dex weapons due to this nerf
+-improved scalings for quality build
+-base dmg and scaling revamp for twikiling/dragon weapons
+-tranquil walk of peace drains stamina from caster and enemy (more from enemy than caster)
+-introduce hybrid movesets
+-master key for killing 2nd asylum demon, no longer starting item
+	-some keys available twice after a specific challange; for example: kill black knight (or iron knight) in undead burg for early access to Havel
+-add upgrade path for catalysts, which increases the scalings to nerf early game caster builds (lightning spear of death especially)
+-attack canceling for magic+basic attacks
+	-this is confirmed to be possible:
+"Every animation has "cancel by _" events. If not, you can add them.
+The hardest part is figuring out which ID is which animation and which event ID does what, since none of it is documented
+If you scroll up a bit in #practical-info you can see me piecing it together" <-from rekindeled discord. related modding tool: https://www.nexusmods.com/darksouls/mods/1364
+-add i-frames to backstep
+-nerf or remove whif animation on heavy weapons
+-check out whips to find out how to make weapon un-aprryable/animation un-parryable
+-add parry animations for 2h weapons and nerf medium shield parry (reduce speed and/or later frames)
+-remove "toggle escape" by adding stagger frames to swap animations
+-increased lock on distance
+-add unparryable attacks to some heavy weapons
+-add backstab protection to rolling
+-add bonfire ascetic? maybe permagravelord the area+respawn boss? possibly using events, propably not worth doing tho
+-likely not possible or complicated with cheat engine:
+	-no longer 4-ways rolling when locked on
+		https://www.nexusmods.com/darksouls/mods/1474?tab=description
+	-delay before backstab
+	-deadangle shields
+-heavily reduce armor upgrade cost, no longer requires slab for +10, requires less twinkling titanite for +5
+-less poise overall for armor
+-have a covernant to downlevel character to base stats and give souls to respec (introduce coventant-bound item that can be bought or ultra-rare dropped. best use way of white for this)
+-unify wolf and rusted iron ring
+	-rusted iron ring: fall protection buff?
+-dark woodgrain ring reduces poise
+-ring/item that triggers gravelording, applies some bonus to offset this. perhaps ring of sacrefice affect?
+-hornet ring increases physical damage, but attacks reduce hp on hit (simillar to chaos blade, make sure this only applies to weapons and not spells)
+-orange charred ring applies fire buff to weapons-> usefull for weapons with fire damage, possible to combine with resins (no spell to buff weapons for pyro, that would be op af)
+	-alternative: deals fire damage on rolls (look up armour of thorns for this)
+-armour of thorns: deals bleed damage on rolls
+-covenant of atorias allows you got hit ghosts/adds "curse" effect
+-possibly give negative effects for transient curse, maybe hp drain to prevent early game cheese
+-estus charges: 5->8->10->12
+-slower estus heal
+-custom matchmaking: rekindeled allready has a dll that does this and with minimal modifications this should work for us as well
+-rolling: higher % increases stamina needed to roll
+-what to do with raw path? better adjust base dmg+scalings to make weapons on base-stats viable? raw just makes range of stats pointless to spec into, reward for not getting stats->perhaps for catalysts? second tier of special weapons?
+-add cracked red eye orbs as reward for covenants+recurring rewards for forest hunters
+-consumables with longer buff duration (weed for stamina, maybe add something for spell-castings?)
+-hunter charm nulls all healing, so no humanity,miracles,blessings
+-special attacks build up curse (increase curse cap by a lot and increase curse dmg in the game?) instead of costing durability. you can't spamm specials, but you can use them without breaking your weapon
+
+
+-idea to prevent stunlock:
+	on hit effect for all weapons: increase max poise by some high % or high flat value for 1-2 seconds on target
+		-poise broken: refill poise to max->hyperarmor
+		-poise not broken: poise regen does not reach previous max-poise (hopefully)->no impact
+
+3 versions of magic weapons (weapon upgrade paths):
+-Physicaly scaling builds and magically+physically scaling builds (weapon+resin or buff):
+	-low flat magic damage% added (no scaling), physical scaling stays the same but base damage reduced by some %, buffable
+	-for scaling+buff builds optimal (a bit more dmg than physical+buff), weaker than physical without buff, stronger than physical when using resins.
+	-lightning, fire and magic paths used for this 
+	-idea: maybe have increased buff duration as well
+-Magically scaling builds and magically+physically scaling builds (no resin or buff):
+	-high magic damage% added (high scaling), physical dmg reduced slightly, scaling heavily reduced
+	-for int builds optimal and for int+dex strong enough to be viable as off hand. weak against high mr/armor builds, strong against low mr/armor builds.
+	-enchanted and divine paths used for this
+	-doesn't exist for fire damage paths, there you have the chaos enchant instead
+-Magically scaling builds (pure caster focus, no resin or buff):
+	-very low durability, much lower physical scalings, a bit lower base dmg, some magic damage (with medium scaling).
+	-increases spell dmg or healing (maybe also physical scalings for catalysts?), grants magic resists (maybe also some phys?), weaker physical block/stability, perhaps also other effects (regen for divine, not sure abot crystal yet)
+	-grants additional casts when held!
+	-slightly lower dmg than scaling magic with no physical investement, quite weak in physically scaling builds. use more as a casting accessory/boost than actual weapon
+	-occult and crystal paths used for this
+
+-give unbuffable weapons special effects to highlight the enchantment used
+-magic dmg % added by magic infusion is base+base*combined scaling*(60-90)%
+	-upgrade material rescales this, makes it easy to balance things out
+
+
+Example damage calculations for 40/40 (dex or str/int or faith) build, 10/40, 10/10 and 40/10 build:
+comparison between original and flat magic damge% with and without buffs.
+-todo: add calculations for crystal and divine 
+-idea: increase scaling factor for physical to current crystal scaling for flat magic damage enchants? preserve bonus through stat scaling but lower base physical.
+
+vs 180 armor/ 210 mr:
+
+dex build (low AR weapons):
+right now (phys+buff): dex ar 380, 340 buff -> 255+200=455
+after (phys+buff): dex ar 380, 220 buff -> 255+92=347
+after (magic+buff) 340(-10%phys base (affects scaling!)),300(+40%phys base as magic) -> 217+163=380 
+after (magic): 340,80 -> 227+10=237
+after (10/40): 245 (200 base),220 buff -> 128+92=220
+after raw: 280 (base+40%) -> 160 (if extended to +10 in case that is possible)
+after (magic): 220+80 -> 106+10=116
+after (magic+buff 10/40): 106+163=269
+after (scaling magic 10/10): (80%base,-40% current scaling (effectively almost 50% of original scaling)) (160+25=185), (60% base, 133% scaling at 40 int) (120+40=160) = 76+42=118 (a bit less magic dmg for heavy weapons and low scaling weapons, maybe 50% base)
+after (scaling magic 10/40): 185,280 = 76+145 = 221
+after (scaling magic 40/40): (160+90), 200 = 133+145=278
+
+str build (high AR weapons):
+(chaos 2h right now: 407 total damage)
+right now (phys+buff): str ar 560 (330 base), 340 buff -> 430+200=630
+after (phys+buff): str ar 560, 220 buff -> 430+92=522
+after (magic+buff): 500, (130+220=350) -> 371+209=580
+after (magic): 500,130 = 397
+right now (20/40) 445,220 -> 318+92=410
+after (magic+buff) 400,350 -> 483
+after (magic) 400, 130 -> 300
+after (scaling magic 20/10): (260+60=320),(165(50%)+55=220)=290
+after (scaling magic 20/40): 320,385=440
+after (scaling magic 40/40): 380,385=497	
+
+-Embers required for upgrade paths:
+
+technical:
+	"Ascension path is determined by the weapon, but stuff like Embers and shops are handled by .esd files and events" -LordOfSandvich
+	"no tool exists yet; Event editing exists"
+	"check HotPocketRemix on Github" (DSEventScriptTools)
+
+	general path availability:
+	-normal, raw: andre
+	-boss: everyone
+	-fire, chaos: vamos
+	-lightning, divine: andre
+	-magic, enchanted: rickert
+	-occult, crystal: giant
+	-giant can make magic +10, enchanted +5, lightning +10, divine+5 with no ember (if possible, otherwise sells embers for that stuff?) and related top tier transformations after getting crystal and occult (if not possible, add large magic and large divine embers to crystal and occult drops)
+	
+
+	basic tier:
+	-requires small shards
+	-no embers required
+	-magic, fire, lightning require right blacksmith
+	-magic, fire and lightning should be transformable at +0, otherwise you could get nomal+5 and then element+5 too soon
+
+	avanced tier:
+	-requires large (beginning of sen's), magic (after sif, behind grave), flame (after ceaseless, in lava), divine ember (after pinwheel, large tomb in catacombs)
+	-allows for +10 normal, lightning, magic, fire
+	-allows for +5 raw, divine, enchanted and bossweapons (bossweapons available by default, maybe use enchanted ember here)
+
+	top tier:
+	-crystal ember:(from enchanted+5): requires big hat logan questline to be complete
+	-occult ember: requires painted world to be complete
+	-giant ember: kill reward for four kings (technically gets you +15 before anor londo, but only 2 bosses before anor londo) or maybe found in DLC after doing Atorias? or Manus? or even Kalameet?; allows for +15 normal and +10 raw
+	-large flame/divine/magic allows for +15 lightning, magic and fire as well as +10 enchanted and divine. found after lordvessel barriers
+	-chaos ember: allows for +5 chaos, found somewhere in lost izalith (same for large flame ember)
+
+
+-possibly introduce ember to match upgrade paths of magic and lightning weapons or remove enchanted ember from the game or use enchanted ember for something different 
+	-possibly boss weapons +10 for giant blacksmith as "soul ember"? could be placed in new londo ruins to give that place an ember as well -> might allow for boss weapons to evolve at +0
+	-possibly use for +10 (maybe in addition to +10 for boss weapons? maybe have a look at dragon weapons as well) for twinkling titanite to stop early game op with black knight weapons
+		-twinkling,dragon and boss could start with +5 equivalent stats, reach +10 equivalent at +5 and +15 equivalent at +10 
+		-generally good idea to have the ember in londo ruins, but the blacksmith in anor to prevent early game max of boss weapons
+	-possibly as cursed int+faith scaling ember (deals magic damage and can hurt ghosts) <-propably too much work, better use abyss weapons for this (atorias,kalameet,dark sword,lifehunt scythe)
+-possibly rename (large) divine ember to (large) lightning ember to avoid confusion
+
+no upgrade --any smith--> normal+5 --large ember (anrde)--> normal+10 --giant ember (andre)--> normal+15 
+           |	                    |                   |
+           |                        |                   --> raw+5     --giant ember (andre)--> raw+10
+	   |    		    |
+	   |    		    -any smith          --> boss+5
+	   |
+	   |
+	   -andre/giant--> lightning+5 --divine ember (andre/giant)--> lightning+10 --large divine ember (andre/giant)--> lightning+15
+	   |    		                                   |
+	   |    		                                   --> divine+5      --large divine ember (andre/giant)--> divine+10
+	   |    								      |
+	   |    								      -occult ember (giant)--> occult+5
+	   |
+	   -rickert/giant--> magic+5 --magic ember (rickert/giant)--> magic+10 --large magic ember (rickert/giant)--> magic+15
+	   |    		      |                            
+	   |    		      -enchanted ember (rickert/giant)--> enchanted+5  --large magic ember (rickert/giant)--> enchanted+10
+	   |    								        |
+	   |    								        -crystal ember (giant)--> crystal+5
+           |
+	   -vamos--> fire+5 --flame ember (vamos)--> fire+10 --large flame ember (vamos)--> fire+15
+							      |
+							      -chaos flame ember (vamos)--> chaos+5
+
+
+magic in general:
+-get all magic adjusts to roughly same lvl and adjust all spells -> introduce hybrid catalysts
+-change dex cast speed breakpoint for all spells to 40 instead of 45 (maybe even different for different spells?)
+-introduce stamina costs for spells. especially high cost for spammable high damage spells, such as wrath of the gods
+-auxilary effects for buffs; for example: crystal increases poise and stamina damage, but increases stamina per swing (if possible) as well
+
+technical notes:
+catalyst scaling breakpoints in calculation corrections, referenced by "correct type"
+spells ref projectiles
+bullets ref pc attacks
+magic projectile dmg in pc attacks
+
+schools of magic:
+-pyro:	pure fire damage
+-chaos: physical and fire damage (mostly fire, maybe 60/40 split), same catalysts as pyro. increase duration of lava remaining on the ground?
+-sorceries: pure magic damage, requries int and magic catalyst
+-hexes: requires faith and int, scales with both or either (int scaling usually higher), cast with magic catalysts, deal magic dmg and some physical dmg (maybe 75/25 split)
+-crystal: physical and magic damage (mostly physical, maybe 33/66 split), requires high int
+-mircales: requries faith, mostly healing or lightning damage. lightning damage is really good vs. heavy armor
+-occult (ex. walk of peace, gravelord sworddance, darkmoon blade, wrath of the gods, denial of death): simillar to hexes, only that they are cast with talismans; mostly deal magic damage and require (low) int and faith
+
+casting tools:
+
+idea: catalysts that consume hp, souls and maybe even humanity to buff casts?
+idea: different casting speeds?
+idea: use buffs (depending on upgrade rank) to increase physical damage (multiplier) in addition to str/dex scalings
+
+Catalysts:
+Oolacile Ivory: no scalings; low bonus to physical damage. good for sorceries and ok for hexes at low stats
+Oolacile: no scalings, higher bonus to physical than ivory and additional faith requirement. good for sorceries, hexes and ok for crystal at low stats
+Sorcerer's: very good int scaling, low dex scaling. great for sorceries and good for hexes. poor for crystal
+Beatrice: good int scaling and good dex scaling. good hexes and crystal, ok for sorceries
+Logan: ultra high int scaling, hits breakpoint at 50 int (normal: 40). no physical scalings. great for sorceries and hexes, poor for crystal
+Tin Crystalisation: good int scaling and very high str scaling. no longer halves casts. great for crystal and hexes, good for sorceries
+Manus: very good int scaling, good dex scaling. has some (low) faith requirement (and maybe scaling). great for sorceries and hexes, good for crystal
+Tin Banishment: good str+dex scalings, low-ok int scaling. great for crystal, good for hexes and poor for sorceries
+
+Talismans:
+Velka: very good faith scaling, good str scaling. has some medium int requirement (and maybe scaling). Great for occult and miracles
+Talisman: very good faith scaling, ok str scaling. Great for miracles, ok for occult
+Canvas: good faith scaling, good str scaling. Great for occult, good for miracles
+Thorolund: no scalings, ok physical bonus. Good for occult and miracles
+Ivory: ultra high faith scaling, hits breakpoint at 50. no physical scalings. great for miracles and good for occult
+Darkmoon: good faith scaling, ok str scaling, has a buff to magic damage. great for occult, especially for wrath of the gods and moonlight blade and good for miracles.
+Sunlight: very good faith scaling, has a buff to lightning damage, no physical scalings. Great for miracles, especially lightning spears and sunlight blade. ok for occult
+
+Pyro-flames: upgrading pyro-flames should be MUCH cheaper. Maybe 30-40k for a full upgrade
+Normal: no or low scaling, high magic adjust and no physical bonus. good for pyromancy and ok for chaos pyromancy
+Chaos: no or low scaling, ok magic adjust and ok physical bonus. scales with humanity. good-great for chaos pyromancy and good-ok for pyromancy (depends on humanity)
+
+Hybrids:
+
+mircales+sorceries:
+Tin Darkmoon: good scalings for int+faith, ok dex scaling, has high int+faith requirements. great for hexes and occult (due to req. contributing to scalings), good for the rest (due to high stat investment, damage wise very good), ok for crystal
+
+sorceries+pyro:
+Izalith catalyst: good int scaling and ok dex scaling. good for sorceries, pyro and hexes, ok for chaos pyro and crystal
+
+miracles+pyro:
+Demon: good faith scaling and good str scaling. scales with humanity. great-good for chaos pyro and occult, good-ok for the rest (depends on humanity)
+
+
+-extra unique spells or effects for casting tools on block/bash buttons (ex. repair spell for tcc)
+
+
+stats in general: possibly through cheat engine script:
+
+swap resistance and endurance to make carry weight changes possible
+resistance->carry weight
+
+confirmed to be possible:
+
+"Yeah, doing code injections w/ CE is like, trivially easy https://streamable.com/cudwo
+
+Hm, so the main issue is you wanna split Stamina and Equip load, right? At the glance that might not be that bad. Since the game basically has two hidden stats for stamina and equip load, all you need to do is find at what point the game sets those based on END, and tweak the code to use your different calculations
+I don't know where that calculation is performed tho, but it should be easy to find if you use CE and find what accesses the END variable when you level up and stuff" - metal-crow
+
+inject code after stamina and carry are set and run new calculation for END stat there
+inject code after setting RES stat and run calculation for setting carry weight here (so that if you lvl RES up something actually happens)
+add increased poise (stacking) after poise is broken-> at some point able to poise through 1 hit-> no more infinite stunlock. can be done by injecting code into the "update current poise" function -> gain poise for a certain number of frames or until hit (can detect hit since poise gets reduced)
+inject code after updating stamina, keep track of difference. add (or subtract) additional stamina as multiple of difference for slower stamina regen for heavy builds. maybe also add a small bit of regeneration for leveling END. Make sure to not exceed stamina caps!
+
+
+make scaling past 40 somewhat viable -> softcap at 40, hardcap at 60. make sense to go 40 str and then 2-hand weapon
+change rolling thresholds/rolling speed/distance/stamina regen 
+higher carry weight->slightly more stamina cost for rolling, slightly less i-frames. all rolls->mid roll? fast roll seems op
+ninja flip ring: reduces poise? maybe turn into fast roll?
+
+secondary stat boni:
+vit->increase aux stats and armor
+end->increase stamina regeneration
+dex->increase poise (might not be possible)
+str->increase hp
+carry->increase stamina
+att->increase casting speed, increase overall mr a bit
+faith->increase lightning resist and slightly increase fire resist
+int->increase magic resist and slightly increase fire resist
+
+change blocking:
+blocking with weapons should be viable, at least vs. pure physical damage. it should have decent physcial block, but cost quite a bit of stamina when compared to shields
+-hand protection/shield size -> physical reduction
+	-weapons: 75%-90%
+	-small shields: 80%-90%
+	-medium shields: 90%-100%
+	-large shields: 95%-100%
+-weapon/shield thickness -> stability
+	-weapons: 20-40
+	-small shields: 35-45
+	-medium shields: 40-55
+	-large shields: 50-70
+-mr dependent on material, very low for weapons
+
+-have a look at parry frames... possibly later parry timings to prevent reaction parry abuse
+
+-sfx demo: https://www.youtube.com/watch?v=jp9RDqAle5w
+-dark souls pvp mod https://www.reddit.com/r/darksouls/comments/6kf47l/dark_souls_overhaul_project/
+
+technical (weapons):
+-isCustom: not really known what it does
+-IsEnhance: determines wether buffable or not 
+
+
+
+starting classes:
+
+Fencer:
+- high dex+stamina, medium-high def
+- uses rapier, parry dagger or target shield
+- perhaps elite knight or silver knight chest piece
+
+Swordsmith:
+- high str+medium-high stamina+carry weight, medium deff
+- uses heavy weapons, maybe zweihänder or claymore, smith hammer secondary
+- bandits chest piece + heavier armor? 
+- starts out with smitting tools
+
+Town guard/Royal guard?:
+- high str+med-high dex+carry weight, medium deff
+- uses lucerne
+- town hollow set 
+
+Inquisitor:
+- med-high faith+strength+carry weight, 10 att, high deff
+- mace
+- healing miracle 
+- mix of cleric+wanderer set
+
+Assasin:
+- high dex+str+stamina, 10 int+att, low deff
+- has aural decoy
+- thief set
+
+Sealer:
+- high int, medium-high faith, att for both spells, low deff
+- crimson set
+- ghost blade and effigy shield
+- spells: cast light, dark orb
+- tin banishment catalyst
+- has new londo seal
+
+Pyromancer:
+- simillar to original, less int+faith
+- has additional spell combustion
+
+Sorcerer:
+- simillar to original,
+- has soul arrow and homing soul mass
+
+Cleric:
+- simillar to original, more focussed on casting
+- has healing and emit force miracles
+
+
+
+starting gifts:
+-firekeeper soul
+-rite of kindling
+-hero soul (perhaps even great hero soul)
+-upgrade materials (2x twinkling, 5x small shard (check if possible to add multiple items as gifts))
+-tiny beings ring
+-red eye orb ?
