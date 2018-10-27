@@ -1,5 +1,6 @@
 mod name: Prepare to GIT GUD edition
 
+
 general changes:
 -highly reduced damage (about 200-250 for 2 uses at 30-50 stat investment) for buffs, requirements and slightly more charges (2 charges for faith buffs) and longer duration
 -improved base dmg for dex weapons due to this nerf
