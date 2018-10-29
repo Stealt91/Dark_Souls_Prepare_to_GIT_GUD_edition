@@ -1,1 +1,5 @@
-0001: Set up deprived as a debug starting class, starts with souls and upgrade materials as well as a +15 club -LagOps
+Set up deprived as a debug starting class, starts with souls and upgrade materials as well as a +15 club -LagOps
+Reduced estus count to 5/8/10/12 from 5/10/15/20
+TODO: adjust estus healing and healing speed (slightly more healing, much longer time to fully heal (around 3-4 seconds maybe)
+Adjusted physical scaling: 1 - 40 - 60 - 100: 0% - 66.67% - 82.5% - 100%, increased base damage per upgrade by 25% and scaling is increased by 20% for all standard upgrades. damage values at +15 40 investment aproximately the same, better damage at low investment and more damage gain past 40 investment. Scaling nerf for pure str weapons likely needed to compensate for buffed 2h 40 str build
+TODO: unify upgrading for clubs and regular weapons, no idea why this is seperate in the first place. Right now: Clubs are heavily nerfed! 
