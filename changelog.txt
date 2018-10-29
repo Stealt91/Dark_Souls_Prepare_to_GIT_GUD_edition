@@ -1,0 +1,1 @@
+0001: Set up deprived as a debug starting class, starts with souls and upgrade materials as well as a +15 club -LagOps
