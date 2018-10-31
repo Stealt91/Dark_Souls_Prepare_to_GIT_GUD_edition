@@ -59,6 +59,9 @@ If you scroll up a bit in #practical-info you can see me piecing it together" <-
 		-poise broken: refill poise to max->hyperarmor
 		-poise not broken: poise regen does not reach previous max-poise (hopefully)->no impact
 
+-gate +15 ember behind sif ring, remove raw path (perhaps later for fire buff build when adding chaos weapon), put atorias' crest behind moonlight butterfly.
+-gate embers for special effect upgrades: logan questline, painted world, covenant-reward for chaos covenant
+
 3 versions of magic weapons (weapon upgrade paths):
 -Physicaly scaling builds and magically+physically scaling builds (weapon+resin or buff):
 	-low flat magic damage% added (no scaling), physical scaling stays the same but base damage reduced by some %, buffable

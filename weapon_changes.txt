@@ -1,0 +1,4 @@
+test-weapon: scimitar
+
+0: normal weapon, stays mostly the same; TODO: later: adjust str scaling (propably in upgrade material) and block values
+100: former crystal weapon (changed into enchanted): sell price the same as normal, magic base damage the same as normal base damage, uncheck disable repair, 10x durability (current/max) (rest stays the same)
