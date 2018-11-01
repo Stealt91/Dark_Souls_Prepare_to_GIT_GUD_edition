@@ -1,5 +1,15 @@
 mod name: Prepare to GIT GUD edition
 
+mapping: in debug mode:
+GAME -> CHR INS -> WORLD CHR MAN -> c0000 -> Chr Basic Info
+top is your MSB coordinates and current hitbox you're standing on
+
+find object item lot is attached to:
+
+menue: treasure items OBJ:o..._... <- object id in parts/objects
+
+@LagOps also heres a cool secret about that menu
+Press X+A to warp to the treasure that your cursor is on in the menu
 
 general changes:
 -highly reduced damage (about 200-250 for 2 uses at 30-50 stat investment) for buffs, requirements and slightly more charges (2 charges for faith buffs) and longer duration
