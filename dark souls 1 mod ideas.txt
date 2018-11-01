@@ -272,11 +272,12 @@ Pyro:
 Warmth (if possible, maybe use bontifull sunlight somehow?)
 Lingering flame (no idea how... maybe look at spells with on hit effects like sunlight spear)
 Improve immolation to deal damage on rolling-attacks
+Fire serpent (tracking prjectile on the ground, have a look at white dragon breath and dragon ugs special)
+Perhaps forbidden sun?
 
 Chaos:
 Chaos weapon
 Lava puke attack from queelag
-Perhaps forbidden sun?
 seething chaos
 
 Hexes:
@@ -291,7 +292,7 @@ scared oath
 lightning cast from drakes (use like fire surge)
 tears of denial (check out ring of sacrefice?)
 lightning bolt (explodes on max range)
-lightning stake
+lightning stake (lightning from drakes combined with cristal ground-slam)
 
 
 
