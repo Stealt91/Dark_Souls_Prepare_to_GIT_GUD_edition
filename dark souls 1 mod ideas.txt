@@ -36,6 +36,7 @@ If you scroll up a bit in #practical-info you can see me piecing it together" <-
 -unify wolf and rusted iron ring
 	-rusted iron ring: fall protection buff?
 -dark woodgrain ring reduces poise
+-leo ring: works for all weapons and increase poise damage for counters
 -ring/item that triggers gravelording, applies some bonus to offset this. perhaps ring of sacrefice affect?
 -hornet ring increases physical damage, but attacks reduce hp on hit (simillar to chaos blade, make sure this only applies to weapons and not spells)
 -orange charred ring applies fire buff to weapons-> usefull for weapons with fire damage, possible to combine with resins (no spell to buff weapons for pyro, that would be op af)
@@ -55,6 +56,8 @@ If you scroll up a bit in #practical-info you can see me piecing it together" <-
 
 
 -idea to prevent stunlock:
+	modified karmic justice: Make it trigger on 2-3 hits, increasing poise by a %
+	triggered in animation: Apply buff when stunned
 	on hit effect for all weapons: increase max poise by some high % or high flat value for 1-2 seconds on target
 		-poise broken: refill poise to max->hyperarmor
 		-poise not broken: poise regen does not reach previous max-poise (hopefully)->no impact
@@ -249,6 +252,48 @@ Demon: good faith scaling and good str scaling. scales with humanity. great-good
 
 
 -extra unique spells or effects for casting tools on block/bash buttons (ex. repair spell for tcc)
+
+-spells:
+
+Crystal:
+Crystalization: adds layer of crystals to the body (looks like magic barrier with crystal weapon as effect, uses orange charred ring effect). rolling attacks deal physical damage, increases magic resists moderately
+Crystal wave: ground slam effect of golem, heavly knockback if possible
+
+Magic:
+Projectile attacks from moonlight butterfly, MLGS, gwyndolin etc
+Soul dart (perhaps single cast from butterfly)
+
+Dark:
+Dark rain from manus
+Dark beed barage from manus
+Pursuer long range cast
+
+Pyro:
+Warmth (if possible, maybe use bontifull sunlight somehow?)
+Lingering flame (no idea how... maybe look at spells with on hit effects like sunlight spear)
+Improve immolation to deal damage on rolling-attacks
+
+Chaos:
+Chaos weapon
+Lava puke attack from queelag
+Perhaps forbidden sun?
+seething chaos
+
+Hexes:
+Warped barrier (short time invoulnerability (maybe look at new londo ghosts?), damage heavily reduced while using, heals entirely nullified. can be used to negate ranged magic (soulmass/soulspear combo) and prepare slow spells (lightning spear, great magic barrier, tranquil walk of peace, ravelord sworddance)
+Pinwheel ranged attack ?
+Lifedrain patch (like oolacile mages)
+Resonant soul
+Fix Karmic Justice?
+
+Miracles:
+scared oath
+lightning cast from drakes (use like fire surge)
+tears of denial (check out ring of sacrefice?)
+lightning bolt (explodes on max range)
+lightning stake
+
+
 
 
 stats in general: possibly through cheat engine script:
