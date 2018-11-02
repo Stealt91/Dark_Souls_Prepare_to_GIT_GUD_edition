@@ -3,9 +3,36 @@ test-weapon: scimitar
 todo: ADD VISUAL BUFF EFFECTS
 todo: ADD BUFF TO CRYSTAL/OCULT/CHAOS
 
+
+
+Scaling (in weapons param: Correct strength/agility) (aproximate values used/given)
+STR scaling has been lowered to 90% of the dex scaling to account for 2hand bonus when using high stat investment (40str)
+	-treat str and dex scalings equaly when assigning scaling values, no need to give lower str value to account for 2h dmg
+
+pure dex / pure str weapons:
+-primary scaling: 70 (low, B) 80 (average, A) 90(high, S) (SLIGHTLY adjust your base damage when using particularly high/low scalings)
+-secondary scaling <30 (D scaling)
+-pick particularly low secondary scaling when using high primary scaling
+
+quality build:
+-primary and secondary scalings >40
+-base damage used comparable to pure dex/str weapons in class!
+individual scalings: 50(low, med-low C), 60(average, high C), 70 (high, B) (avoid picking both values as either high or low, adjust base damage SLIGHTLY to account for scalings)
+
+
+
+
+CAUTION: ADAPT MAGICAL BASE DAMAGE DEPENDING ON PHYSICAL BASE DAMAGE for all SCALING magical builds (this does NOT include lightning and enchanted (formerly crystal))!
+- around 80 base damage (around 400 physical ar (with 1 attribute scaling at 40) fast weapon): use 100% of normal path physical base damage as physical and magical base damage
+- around 120 base damage (around 600 physical ar (with 1 attribute scaling at 40) heavy weapon): use 90% of normal path physical base damage as physical and magical base damage
+for everything in-between use linear scaling (around 100 base damage would be a 95% adjustment)
+
+
+
+
 0: normal weapon, stays mostly the same; TODO: later: adjust str scaling (propably in upgrade material) and block values
 100: former crystal weapon (changed into enchanted): sell price the same as normal, magic base damage the same as normal base damage, uncheck disable repair, 10x durability (current/max) (rest stays the same)
-400: magic weapon: set physical scaling and base damage equal to normal path, set magic correct to 100, set magic base damage to physical base damage, correct type 0
-500: former enchanted (changed into crystal): set physical scaling and base damage equal to normal path, set magic correct to 100, set magic base damage to physical base damage, correct type 0
-800: fire: set physical scaling to values of normal, set magic and faith correct to 100
-900: chaos: set physical scaling to values of normal, set magic and faith correct to 100, set physical base damage to normal
+400: magic weapon: set physical scaling and base damage equal to normal path, set magic correct to 100, set physical and magical base damage as described above, correct type 0
+500: former enchanted (changed into crystal): set physical scaling and base damage equal to normal path, set magic correct to 100, set physical and magical base damage as described above, correct type 0
+800: fire: set physical scaling to values of normal, set magic and faith correct to 100, set physical and magical base damage as described above
+900: chaos: set physical scaling to values of normal, set magic and faith correct to 100, set physical and magical base damage as described above
