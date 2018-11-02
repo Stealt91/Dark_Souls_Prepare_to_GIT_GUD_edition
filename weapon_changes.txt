@@ -1,4 +1,4 @@
-test-weapon: scimitar
+test-weapon: scimitar <-look up values if unclear!
 
 todo: ADD VISUAL BUFF EFFECTS
 todo: ADD BUFF TO CRYSTAL/OCULT/CHAOS
@@ -10,7 +10,7 @@ STR scaling has been lowered to 90% of the dex scaling to account for 2hand bonu
 	-treat str and dex scalings equaly when assigning scaling values, no need to give lower str value to account for 2h dmg
 
 pure dex / pure str weapons:
--primary scaling: 70 (low, B) 80 (average, A) 90(high, S) (SLIGHTLY adjust your base damage when using particularly high/low scalings)
+-primary scaling: 70 (low, B) 80 (average, A) 90(high, S) (SLIGHTLY adjust base damage (+-5% when compared to simillar weapons, more if significant weight difference) when using particularly high/low scalings)
 -secondary scaling <30 (D scaling)
 -pick particularly low secondary scaling when using high primary scaling
 
@@ -31,8 +31,12 @@ for everything in-between use linear scaling (around 100 base damage would be a 
 
 
 0: normal weapon, stays mostly the same; TODO: later: adjust str scaling (propably in upgrade material) and block values
-100: former crystal weapon (changed into enchanted): sell price the same as normal, magic base damage the same as normal base damage, uncheck disable repair, 10x durability (current/max) (rest stays the same)
+100: former crystal weapon (changed into enchanted): sell price the same as normal, magic base damage the same as normal base damage, uncheck disable repair, 10x durability (current/max)
+200: lightning: set physical scaling equal to normal path, set faith correct to 0, uncheck isCustom, set SpecialAttributes to 6
+300: raw: don't do anything for now
 400: magic weapon: set physical scaling and base damage equal to normal path, set magic correct to 100, set physical and magical base damage as described above, correct type 0
 500: former enchanted (changed into crystal): set physical scaling and base damage equal to normal path, set magic correct to 100, set physical and magical base damage as described above, correct type 0
+600: divine: set physical scaling and base damage equal to normal path, set faith correct to 100, set physical and LIGHTNING base damage as described above (magical damage set to 0), correct type 0
+700: occult: set physical scaling and base damage equal to normal path, set faith correct to 100, set physical and magic base damage as described above, correct type 0
 800: fire: set physical scaling to values of normal, set magic and faith correct to 100, set physical and magical base damage as described above
 900: chaos: set physical scaling to values of normal, set magic and faith correct to 100, set physical and magical base damage as described above
