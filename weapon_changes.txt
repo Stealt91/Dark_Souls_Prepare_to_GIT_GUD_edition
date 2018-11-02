@@ -1,5 +1,11 @@
 test-weapon: scimitar
 
+todo: ADD VISUAL BUFF EFFECTS
+todo: ADD BUFF TO CRYSTAL/OCULT/CHAOS
+
 0: normal weapon, stays mostly the same; TODO: later: adjust str scaling (propably in upgrade material) and block values
 100: former crystal weapon (changed into enchanted): sell price the same as normal, magic base damage the same as normal base damage, uncheck disable repair, 10x durability (current/max) (rest stays the same)
 400: magic weapon: set physical scaling and base damage equal to normal path, set magic correct to 100, set magic base damage to physical base damage, correct type 0
+500: former enchanted (changed into crystal): set physical scaling and base damage equal to normal path, set magic correct to 100, set magic base damage to physical base damage, correct type 0
+800: fire: set physical scaling to values of normal, set magic and faith correct to 100
+900: chaos: set physical scaling to values of normal, set magic and faith correct to 100, set physical base damage to normal

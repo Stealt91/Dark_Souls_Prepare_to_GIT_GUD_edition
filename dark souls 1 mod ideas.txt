@@ -342,6 +342,9 @@ int->increase magic resist and slightly increase fire resist
 
 change blocking:
 blocking with weapons should be viable, at least vs. pure physical damage. it should have decent physcial block, but cost quite a bit of stamina when compared to shields
+
+block values in weapon param: 100% values at +15 or equivalent
+
 -hand protection/shield size -> physical reduction
 	-weapons: 75%-90%
 	-small shields: 80%-90%
@@ -391,7 +394,7 @@ Inquisitor:
 
 Assasin:
 - high dex+str+stamina, 10 int+att, low deff
-- has aural decoy
+- has aural decoy/fall control
 - thief set
 
 Sealer:
