@@ -66,6 +66,7 @@ If you scroll up a bit in #practical-info you can see me piecing it together" <-
 
 
 -idea to prevent stunlock:
+	apply special effect 5300
 	modified karmic justice: Make it trigger on 2-3 hits, increasing poise by a %
 	triggered in animation: Apply buff when stunned
 	on hit effect for all weapons: increase max poise by some high % or high flat value for 1-2 seconds on target
@@ -264,6 +265,7 @@ Demon: good faith scaling and good str scaling. scales with humanity. great-good
 -extra unique spells or effects for casting tools on block/bash buttons (ex. repair spell for tcc)
 
 -spells:
+Need to register in shop lineups???
 
 Crystal:
 Crystalization: adds layer of crystals to the body (looks like magic barrier with crystal weapon as effect, uses orange charred ring effect). rolling attacks deal physical damage, increases magic resists moderately
