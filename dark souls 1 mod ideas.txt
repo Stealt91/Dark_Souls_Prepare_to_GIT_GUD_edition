@@ -276,6 +276,8 @@ Magic:
 Projectile attacks from moonlight butterfly, MLGS, gwyndolin etc
 Soul dart (perhaps single cast from butterfly)
 Pricilla's fog?
+soul stream?
+homing soul arrow?
 
 Dark:
 Dark rain from manus
