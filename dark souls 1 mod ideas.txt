@@ -270,10 +270,12 @@ Need to register in shop lineups???
 Crystal:
 Crystalization: adds layer of crystals to the body (looks like magic barrier with crystal weapon as effect, uses orange charred ring effect). rolling attacks deal physical damage, increases magic resists moderately
 Crystal wave: ground slam effect of golem, heavly knockback if possible
+Crystal wall?
 
 Magic:
 Projectile attacks from moonlight butterfly, MLGS, gwyndolin etc
 Soul dart (perhaps single cast from butterfly)
+Pricilla's fog?
 
 Dark:
 Dark rain from manus
@@ -286,6 +288,7 @@ Lingering flame (no idea how... maybe look at spells with on hit effects like su
 Improve immolation to deal damage on rolling-attacks
 Fire serpent (tracking prjectile on the ground, have a look at white dragon breath and dragon ugs special)
 Perhaps forbidden sun?
+sacred flame (grab attack)
 
 Chaos:
 Chaos weapon

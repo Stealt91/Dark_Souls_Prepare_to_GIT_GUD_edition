@@ -29,8 +29,8 @@ for everything in-between use linear scaling (around 100 base damage would be a 
 
 
 
-
-0: normal weapon, stays mostly the same; TODO: later: adjust str scaling (propably in upgrade material) and block values
+TODO: adjust block values for all weapons
+0: normal weapon, stays mostly the same;
 100: former crystal weapon (changed into enchanted): sell price the same as normal, magic base damage the same as normal base damage, uncheck disable repair, 10x durability (current/max)
 200: lightning: set physical scaling equal to normal path, set faith correct to 0, uncheck isCustom, set SpecialAttributes to 6
 300: raw: don't do anything for now
