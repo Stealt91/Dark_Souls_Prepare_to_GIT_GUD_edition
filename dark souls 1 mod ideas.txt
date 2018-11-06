@@ -11,6 +11,10 @@ menue: treasure items OBJ:o..._... <- object id in parts/objects
 @LagOps also heres a cool secret about that menu
 Press X+A to warp to the treasure that your cursor is on in the menu
 
+you have to move the bonfire object, the spawn point AND the "bonfire character" c_1000 in the char tab. That is the the thing that handles the menu
+
+I also found that there is a part/collision, which has "disable bonfire ID"
+
 general changes:
 -highly reduced damage (about 200-250 for 2 uses at 30-50 stat investment) for buffs, requirements and slightly more charges (2 charges for faith buffs) and longer duration
 -improved base dmg for dex weapons due to this nerf
