@@ -1,3 +1,35 @@
+Progression:
+	get +10 embers or equivalent early
+	(+10 normal after gargoyles?)
+	gate off upgrades via loot:
+		magical upgrades with gems(ascencion)+normal materials
+		few large shards before sens fortress
+		no possibility to farm shards before sens
+	get +15 embers after anor londo/lordvessel
+		exception: +15 normal after sens (find seal there somewhere?)
+		killing sif unlocks lower new londo ruins (only way to fight ghosts now)
+		chunks can be farmed in lower new londo ruins
+
+Move drakes to crystal cave (and area in front of that) have drakes in valey of the drakes be non-respawning
+Demon titanite farmable in lost izalith (prowling demons (add some more))
+	-have crag-spiders are common enemies?
+Twinkling titanite farmable before nito (kill mask guys)
+chunks found in all lategame areas, but can be farmed in lower new londo ruins
+
+farmable:
+blue gems: archives
+red gems: izalith
+white gems: catacombs 
+pale gems (for up to +10 equivalent magic weapons): ghosts in new londo ruins, but enough are found before that
+upgrade path for casting tools: 3x upgrade with pale gem and 2x upgrade with advanced gem?
+	-scaling: material increases scaling by x3 at +5
+		-100 base scaling (200 at +0 base, 400 at +5 base) and additional scaling dependent on casting tool
+
+replace all coloured slabs with normal slabs
+massively reduce armour upgrade costs/investment, no slabs required
+
+
+
 mod name: Prepare to GIT GUD edition
 
 mapping: in debug mode:
