@@ -307,6 +307,7 @@ Pinwheel ranged attack ?
 Lifedrain patch (like oolacile mages)
 Resonant soul
 Fix Karmic Justice?
+single target gravelord sword
 
 Miracles:
 scared oath
