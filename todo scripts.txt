@@ -1,0 +1,1 @@
+add script to drop itemlot for black knight in taurus bossfight (make new itemlot awarding tower key 100% of the time, randomly awards black knight halberd (maybe make black knight drops 100% in mod?) and titanite chunk)
