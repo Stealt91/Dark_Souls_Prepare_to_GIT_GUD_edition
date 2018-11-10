@@ -1,0 +1,12 @@
+firelink shrine
+	-changed the zweihander placement to a hanging corpse below the place with the undead parish elevator 
+	-swapped the 3 humanities and hidden above soul lost undead
+
+undead burg
+	-swapped between large soul of lost undead and rubbish
+	-swapped between the throwing knifes and the wooden shield
+	-place the undead soldier(sword and shield) in the room with the black firebomb chest
+	-place the crossbow undead near the chest with the gold resins
+	-place the helbard black knight on top of the tower u can climb before u encouter the taurus demon.
+
+
