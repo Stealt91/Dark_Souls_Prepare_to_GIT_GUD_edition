@@ -307,6 +307,9 @@ Crystal:
 Crystalization: adds layer of crystals to the body (looks like magic barrier with crystal weapon as effect, uses orange charred ring effect). rolling attacks deal physical damage, increases magic resists moderately
 Crystal wave: ground slam effect of golem, heavly knockback if possible
 Crystal wall?
+Crystal fog
+Crystal dart
+
 
 Magic:
 Projectile attacks from moonlight butterfly, MLGS, gwyndolin etc
