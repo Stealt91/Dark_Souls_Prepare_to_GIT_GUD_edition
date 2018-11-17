@@ -330,6 +330,7 @@ Improve immolation to deal damage on rolling-attacks
 Fire serpent (tracking prjectile on the ground, have a look at white dragon breath and dragon ugs special)
 Perhaps forbidden sun?
 sacred flame (grab attack)
+scattering fireball
 
 Chaos:
 Chaos weapon
