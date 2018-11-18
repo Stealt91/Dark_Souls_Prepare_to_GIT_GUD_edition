@@ -303,6 +303,8 @@ Demon: good faith scaling and good str scaling. scales with humanity. great-good
 -spells:
 Need to register in shop lineups???
 
+CHECK OUT adjust magic/faith ability in special effects for heals/buffs and atkXCorrection in attack param (proably just multiplier and useless)
+
 Crystal:
 Crystalization: adds layer of crystals to the body (looks like magic barrier with crystal weapon as effect, uses orange charred ring effect). rolling attacks deal physical damage, increases magic resists moderately
 Crystal wave: ground slam effect of golem, heavly knockback if possible
