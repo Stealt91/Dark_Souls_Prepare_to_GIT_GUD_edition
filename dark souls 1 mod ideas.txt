@@ -10,6 +10,8 @@ Progression:
 		killing sif unlocks lower new londo ruins (only way to fight ghosts now)
 		chunks can be farmed in lower new londo ruins
 
+Enchanted ember: place in oolacile (fits description as well) or close to hydra
+
 Move drakes to crystal cave (and area in front of that) have drakes in valey of the drakes be non-respawning
 Demon titanite farmable in lost izalith (prowling demons (add some more))
 	-have crag-spiders are common enemies?
@@ -265,13 +267,16 @@ idea: use buffs (depending on upgrade rank) to increase physical damage (multipl
 
 Catalysts:
 Oolacile Ivory: no scalings; low bonus to physical damage. good for sorceries and ok for hexes at low stats
-Oolacile: no scalings, higher bonus to physical than ivory and additional faith requirement. good for sorceries, hexes and ok for crystal at low stats
 Sorcerer's: very good int scaling, low dex scaling. great for sorceries and good for hexes. poor for crystal
 Beatrice: good int scaling and good dex scaling. good hexes and crystal, ok for sorceries
 Logan: ultra high int scaling, hits breakpoint at 50 int (normal: 40). no physical scalings. great for sorceries and hexes, poor for crystal
 Tin Crystalisation: good int scaling and very high str scaling. no longer halves casts. great for crystal and hexes, good for sorceries
 Manus: very good int scaling, good dex scaling. has some (low) faith requirement (and maybe scaling). great for sorceries and hexes, good for crystal
 Tin Banishment: good str+dex scalings, low-ok int scaling. great for crystal, good for hexes and poor for sorceries
+
+TODO:
+Oolacile: no scalings, higher bonus to physical than ivory and additional faith requirement. good for sorceries, hexes and ok for crystal at low stats
+Manus: very good int scaling, good dex scaling. has some (low) faith requirement (and maybe scaling). great for sorceries and hexes, good for crystal
 
 Talismans:
 Velka: very good faith scaling, good str scaling. has some medium int requirement (and maybe scaling). Great for occult and miracles
@@ -319,6 +324,7 @@ Soul dart (perhaps single cast from butterfly)
 Pricilla's fog?
 soul stream?
 homing soul arrow?
+hidden body/weapon: damage reduction and armour penetration?
 
 Dark:
 Dark rain from manus
