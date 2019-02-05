@@ -396,6 +396,12 @@ att->increase casting speed, increase overall mr a bit
 faith->increase lightning resist and slightly increase fire resist
 int->increase magic resist and slightly increase fire resist
 
+
+endurance stamina recovery: use multiple buffs with different weight % activation limit
+roll speeds: different buffs to change up roll speed on breakpoints
+omni rolling: replace directional animations with default
+
+
 change blocking:
 blocking with weapons should be viable, at least vs. pure physical damage. it should have decent physcial block, but cost quite a bit of stamina when compared to shields
 
